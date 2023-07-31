@@ -7,8 +7,11 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate() {
+    static associate(models) {
       // define association here
+      // Additional line of code for 1 to M relationship
+      this.hasMany(models.comment)
+
     }
   }
   Sighting.init(
