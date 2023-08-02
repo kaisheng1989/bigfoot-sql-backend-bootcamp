@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       // Part of 1 to M input 
-      this.belongsTo(models.sightings)
+      this.belongsTo(models.sighting)
     }
   }
   comment.init({
